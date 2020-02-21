@@ -11,7 +11,7 @@ def uniqueDataset(ID):
     import pandas as pd
     
     house = pd.read_csv('https://raw.githubusercontent.com/xga0/unique-dataset/master/house.csv')
-    house_sub = house.sample(n = 100, random_state = ID)
+    house_sub = house.sample(n = 1000, random_state = ID)
     return house_sub
 
 app = Flask(__name__)
