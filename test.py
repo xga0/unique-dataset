@@ -10,7 +10,7 @@ from flask import Flask, request, send_file
 def uniqueDataset(ID):
     import pandas as pd
     
-    house = pd.read_csv(r'C:\Users\sgaox\Desktop\ud\house.csv')
+    house = pd.read_csv('https://raw.githubusercontent.com/xga0/unique-dataset/master/house.csv')
     house_sub = house.sample(n = 800, random_state = ID)
     return house_sub
 
